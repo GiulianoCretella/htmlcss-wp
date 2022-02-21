@@ -1,3 +1,4 @@
+/* reset */
 *{
     margin: 0;
     padding: 0%;
@@ -16,6 +17,26 @@
    margin: 20px auto;
    height: 1500px;
 }
+
+.overlay::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 img{
     width: 100%;
     height: 100%;
@@ -31,14 +52,15 @@ header{
     height: 20%;
 }
 
+/* logo */
+
 .logo{
     width:15%;
-    height: 60%;
+    height:auto;
     border-right: 1px solid grey;
     padding-right: 10px;
-    min-width: 200px;
-    max-width: 200px;
 }
+/* barra di navigazione */
 
 nav ul li{
     display: inline-block;
@@ -53,6 +75,7 @@ nav ul li:hover{
     color: rgb(107, 40, 40);
     cursor: pointer;
 }
+/* hero */
 
 .header-box{
     background-image: url(../img/banner.jpg);
@@ -65,16 +88,6 @@ nav ul li:hover{
     position: relative;
 } 
 
-.overlay::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-}
 .header-text{
     width:50% ;
     position: absolute;
@@ -99,27 +112,14 @@ main{
     padding-top: 20px
 }
 
-.main-text{
-    width: calc(100% - 50% - 40px);
-    float: left; 
-    padding: 15px;
-    height: calc(85% - 40px);
-    margin: 20px;
-}
-.main-text img{
-    object-fit: cover;
-}
+/* float box */
+
 .side-box{
     width: 25%;
     height:calc(85% - 40px);
     margin: 20px 0;
     padding: 15px;
 }
-
-.main-title h1{
-    color: black;
-}
-
 .img-box{
     width: 90%;
     height:40%;
@@ -133,27 +133,37 @@ main{
     margin: 20px auto;
 }
 
-.box-text h5{
+img{
+    object-fit: cover;
+}
+
+.main-text{
+    width: calc(100% - 50% - 40px);
+    float: left; 
+    padding: 15px;
+    height: calc(85% - 40px);
+    margin: 20px;
+}
+
+.main-title h1{
     color: black;
-    margin: 10px 0;
+}
+
+.box-text span{
+    color: black;
     font-weight: 800;
 }
 
-.left{
-    float: left;
-}
-.right{
-    float: right;
-}
 
-
-#heart{
-    color: red;
-}
 
 /* footer */
+
 footer{
     width: 100%;
     text-align: center;
     margin-top: 30px;
+}
+
+#heart{
+    color: red;
 }
