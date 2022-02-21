@@ -137,7 +137,7 @@ img{
     object-fit: cover;
 }
 
-.main-text{
+.main-box{
     width: calc(100% - 50% - 40px);
     float: left; 
     padding: 15px;
@@ -151,10 +151,8 @@ img{
 
 .box-text span{
     color: black;
-    font-weight: 800;
+    font-weight: 500;
 }
-
-
 
 /* footer */
 
