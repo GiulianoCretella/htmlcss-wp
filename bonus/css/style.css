@@ -59,7 +59,8 @@ header{
     height:auto;
     border-right: 1px solid grey;
     padding-right: 10px;
-}
+} 
+
 /* barra di navigazione */
 
 nav ul li{
@@ -120,7 +121,7 @@ main{
 
 .main-title{
     width: 100%;
-    padding-top: 20px
+    padding-top: 20px;
 }
 
 /* float box */
